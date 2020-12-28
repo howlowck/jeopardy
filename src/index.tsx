@@ -4,7 +4,10 @@ import { Provider } from 'react-redux'
 import App from './components/App'
 import reportWebVitals from './reportWebVitals'
 import store from './redux/store'
+import ReactModal from 'react-modal'
 import './index.css'
+
+ReactModal.setAppElement('#root')
 
 ReactDOM.render(
   <React.StrictMode>

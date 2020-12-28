@@ -17,6 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src server.js",
+    "make": "plop",
     "serve": "node server"
   },
   "eslintConfig": {
@@ -52,11 +53,22 @@
     "@types/node": "^12.19.9",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-modal": "^3.10.6",
     "@types/react-redux": "^7.1.12",
+    "classnames": "^2.2.6",
     "eslint": "^7.16.0",
     "eslint-plugin-prettier": "^3.3.0",
+    "lodash": "^4.17.20",
+    "mkdirp": "^1.0.4",
+    "plop": "^2.7.4",
     "prettier": "^2.2.1",
+    "react-confetti": "^6.0.0",
+    "react-countdown-circle-timer": "^2.3.7",
+    "react-modal": "^3.12.1",
+    "redux-observable": "^1.2.0",
+    "rxjs": "^6.6.3",
     "typescript": "^4.1.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "wouter": "^2.7.0"
   }
 }

@@ -1,3 +1,72 @@
+/* bebas-neue-regular - latin */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('fonts/bebas-neue-v2-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/bebas-neue-v2-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* vollkorn-500 - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('fonts/vollkorn-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/vollkorn-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Material Icons */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('fonts/MaterialIcons-Regular.woff2') format('woff2'),
+    url('fonts/MaterialIcons-Regular.woff') format('woff');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.icon-18 { font-size: 18px; }
+.material-icons.icon-24 { font-size: 24px; }
+.material-icons.icon-36 { font-size: 36px; }
+.material-icons.icon-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.icon-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.icon-dark.icon-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.icon-light { color: rgba(255, 255, 255, 1); }
+.material-icons.icon-light.icon-inactive { color: rgba(255, 255, 255, 0.3); }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +79,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.modal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: #060CE9;
+  
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rebeccapurple;
 }

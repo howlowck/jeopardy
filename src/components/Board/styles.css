@@ -1,0 +1,51 @@
+.board {
+    width: 80vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #060CE9;
+}
+
+.category {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.tile {
+    outline: 1vh solid #000;
+    outline-offset: -1vh;
+    user-select: none;
+}
+
+.tile.title {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 5vh;
+    line-height: calc(100vh / 6);
+    text-shadow: 0.2vh 0.2vh #000;
+    text-align: center;
+}
+
+.tile.title span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.tile.question {
+    font-family: 'Bebas Neue', cursive;
+    color: yellow;
+    font-size: 10vh;
+    text-shadow: 0.2vh 0.2vh #000;
+    line-height: calc(100vh / 6);
+    text-align: center;
+    cursor: pointer;
+}
+
+.tile.question.viewed {
+    cursor: initial;
+}
+
+.tile.question.viewed span{
+    visibility: hidden;
+}

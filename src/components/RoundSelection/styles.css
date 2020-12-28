@@ -1,0 +1,36 @@
+.modal.round-selection .title {
+    color: white;
+    font-size: 8vh;
+    text-align: center;
+}
+
+.modal.round-selection {
+    display: grid;
+    grid-template-rows: repeat(1fr, 5);
+}
+.modal .selections {
+    margin: 0 auto;
+    display: flex;
+    color:white;
+}
+
+.modal.round-selection .teams {
+    display: flex;
+    color: white;
+}
+
+.modal.round-selection .teams .team{
+    margin: 10px;
+    font-size: 8vh;
+}
+
+.modal .selections .round-select {
+    height: 7vh;
+    margin: 6px;
+    font-size: 5vh;
+    cursor: pointer;
+}
+
+.modal .selections .round-select.disabled {
+    cursor: initial;
+}

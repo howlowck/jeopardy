@@ -1,0 +1,22 @@
+import './{{ properCase name }}.css'
+import React from 'react'
+
+type Prop = {
+  // put props typings here. i.e. "className: string"
+}
+
+const {{ properCase name }}: React.FC<Prop> = (
+  {
+    // put props name here. i.e. "className"
+  }
+) => {
+  return (
+    <div className="{{ kebabCase name }}">
+      <p>
+          Replace me ({{ properCase name}} component in src/components/{{subPath subpath}}{{ properCase name }}/index.ts)
+      </p>
+    </div>
+  )
+}
+
+export default {{ properCase name }}
