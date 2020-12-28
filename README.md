@@ -1,10 +1,15 @@
-# { Project Name }
+# Jeopardy
 
-{ What is it? }
+A Jeopardy game written in React and Redux Toolkit
 
 ## Features
 
-* { Awesome feature }
+* Multiple Rounds
+* Question and Round Management
+* Team Management
+* Score Management
+* Timers for questions and teams
+* (Future Feature) Daily Double
 
 ## Getting Started
 
