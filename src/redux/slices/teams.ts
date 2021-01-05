@@ -4,16 +4,20 @@ import { Team } from '../../types'
 const slice = createSlice({
   name: 'teams',
   initialState: [
+    // {
+    //   name: 'Hamnet',
+    //   score: 0,
+    // },
     {
-      name: 'Dasher',
+      name: 'Promised Land',
       score: 0,
     },
     {
-      name: 'Prancer',
+      name: 'Uncanny Valley',
       score: 0,
     },
     {
-      name: 'Blitzen',
+      name: 'Vanishing Half',
       score: 0,
     },
   ] as Team[],

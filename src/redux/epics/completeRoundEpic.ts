@@ -1,4 +1,4 @@
-import { Action, AnyAction, createAction } from '@reduxjs/toolkit'
+import { Action, createAction } from '@reduxjs/toolkit'
 import { Observable } from 'rxjs'
 import { filter, mergeMap } from 'rxjs/operators'
 import { addCompletedRound } from '../slices/completedRounds'

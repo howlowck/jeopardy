@@ -4,14 +4,16 @@
 }
 
 .App .teams {
-  padding: 8vh;
+  padding: 4vh;
   flex: 1;
 }
 
 .App .teams .team {
   text-align: center;
-  font-size: 5vh;
+  font-size: 4vh;
   margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
   border: 1px solid gray;
 }
 

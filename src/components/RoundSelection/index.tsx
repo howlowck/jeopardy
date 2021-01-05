@@ -29,7 +29,7 @@ const Component: React.FC<Prop> = ({
         {teams.map((_, i) => {
           return (
             <div className="team" key={`team-${i}`}>
-              {_.name}:
+              {_.name}:<br />
               <span style={_.score < 0 ? { color: 'red' } : {}}>{_.score}</span>
             </div>
           )
