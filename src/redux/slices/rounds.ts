@@ -166,170 +166,175 @@ const initialState: Round[] = [
         title: 'What a year!',
         questions: [
           {
-            prompt: 'Parasite sweeps the Oscars',
-            answer: 'Februry',
-          },
-          {
-            prompt: 'Trump announces he is COVID Positive',
-            answer: 'October',
-          },
-          {
-            prompt:
-              'UK approves Pfizer vaccine, being the first country in the world to do so',
+            prompt: 'Argentina win 2022 World Cup title',
             answer: 'December',
           },
           {
             prompt:
-              'Victor J. Glover Jr. became the first Black astronaut to embark on a long-term stay at the ISS',
-            answer: 'November',
+              'Apple becomes the first company to (briefly) reach $3 trillion market value',
+            answer: 'January',
+          },
+          {
+            prompt: 'Will Smith slaps Chris Rock on stage',
+            answer: 'February',
+          },
+          {
+            prompt: 'Liz Truss resigns as British Prime Minister after 44 days',
+            answer: 'October 20',
           },
           {
             prompt:
-              'NASA confirms the existence of molecular water on the sunlit side of the Moon',
-            answer: 'October',
+              'Microsoft announces its intent to acquire Activision Blizzard for $68.7 Billion',
+            answer: 'January 18',
           },
         ],
       },
       {
-        title: 'Good Bye 2020',
+        title: 'Good Bye 2022',
         questions: [
           {
             prompt:
-              'The first US Supreme Court justice to officiate at a same-sex marriage ceremony',
-            answer: 'Ruth Bader Ginsberg',
+              'He was the beloved TV dad on "Full House" and "America\'s Funniest Home Videos" host',
+            answer: 'Bob Saget',
           },
           {
             prompt:
-              'An 18-time All-Star, won five NBA championships, and the Lakers all-time leading scorer',
-            answer: 'Kobe Bryant',
+              'In February, she received Platinum Jubilee marking 70 years since she acceded to the British throne',
+            answer: 'Queen Elizabeth II',
           },
           {
             prompt:
-              "Won the People's Choice Awards Male Movie Star of the year in 2018",
-            answer: 'Chadwick Boseman',
+              'He was the the inventive prop comedian known for smashing watermelons as part of his act',
+            answer: 'Gallagher',
           },
           {
             prompt:
-              'Holds the Guinness World Record for "most gameshow episodes hosted"',
-            answer: 'Alex Trebek',
+              'She was the first female US secretary of state (1997 to 2001)',
+            answer: 'Madeleine Albright',
           },
           {
-            prompt: 'His first band was "The Broken Combs"',
-            answer: 'Eddie van Halen',
+            prompt:
+              ' won a total of six Grammys over his career, including Best Rap Solo for "Gangsta\'s Paradise" in 1996.',
+            answer: 'Coolio',
           },
         ],
       },
       {
-        title: 'The Good By 2020',
+        title: 'Science 2022',
         questions: [
           {
             prompt:
-              'Scientists engineered "super-enzymes" to eat this to combat an ecological crisis',
-            answer: 'What is plastic',
+              'In May 2022, scientists unveiled the first image of cosmic phenomenon at the center of our galaxy.',
+            answer: 'black hole',
           },
           {
             prompt:
-              'This company launched its first crewed commerical spaceflight',
-            answer: 'What is SpaceX',
-          },
-          {
-            prompt: 'NASA launched a new rover to Mars (properly) named this',
-            answer: 'What is Perseverance',
+              'In July, the first images from this telescope were released to the public, showing the splendor of our galaxy.',
+            answer: 'James Webb Space Telescope',
           },
           {
             prompt:
-              "This country got the world's first sample of material from below the surface of a space rock",
-            answer: 'Japan',
+              'In November, OpenAI released this AI chatbot, taking the world by storm with its conversational ability.',
+            answer: 'ChatGPT',
           },
           {
             prompt:
-              'this prehistoric creature was discovered remarkably well-preserved in the Siberian permafrost',
-            answer: 'What is a Cave Bear',
+              'In December, for the first time in history, scientists achieved a net energy gain using this process.',
+            answer: 'Fusion',
+          },
+          {
+            prompt:
+              'In September, a vaccine developed for this disease by Oxford University. It has 80% effectiveness.',
+            answer: 'Malaria',
           },
         ],
       },
       {
-        title: 'Some Good Buy 2020',
+        title: 'Entertain Me 2022',
         questions: [
           {
             prompt:
-              'Sony released this next-gen console right before the holiday season',
-            answer: 'What is PlayStation 5',
+              'Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives.',
+            answer: 'Severance',
           },
           {
             prompt:
-              'The next generation of virtual reality headset by Facebook',
-            answer: 'Oculus Quest 2',
+              "Steven Grant discovers he's been granted the powers of an Egyptian moon god. ",
+            answer: 'Moon Knight',
           },
           {
             prompt:
-              'In a Tom\'s Guide Article, "Best Tablet of 2020 didn\'t Come from Apple" talks about this product',
-            answer: 'Remarkable 2 Tablet',
+              "A young chef from the fine dining world returns to Chicago to run his family's sandwich shop.",
+            answer: 'The Bear',
           },
           {
             prompt:
-              'This product released by Ford is aimed to compete directly with Tesla Model Y',
-            answer: 'Mustang MACH-E',
+              'Follows the Garvey sisters, who are bound together by the death of their parents and a promise to always protect each other.',
+            answer: 'Bad Sisters',
           },
           {
             prompt:
-              'Released by a beverage giant, this drink mixes soda with coffee',
-            answer: 'Pepsi Cafe',
+              'Nadia and Martín live in the historical "Condesa" in Mexico City. Both are artists and share their home with a stray dog.',
+            answer: 'Amesterdam',
           },
         ],
       },
       {
-        title: 'Hot (Shows) 2020',
+        title: 'Good News 2022',
         questions: [
           {
-            prompt: 'Baskin, Exotic, Saffery, Finlay',
-            answer: 'Tiger King',
+            prompt:
+              "A woman to referee at this global sporting men's event for the first time",
+            answer: 'Stéphanie Frappart at the World Cup',
           },
           {
-            prompt: 'Harmon, Shaibel, Borgov, Townes',
-            answer: 'Queens Gambit',
+            prompt:
+              'A report found sales of this product are in "permanent decline" and likely have peaked in 2017',
+            answer: 'gas-powered cars',
           },
           {
-            prompt: 'Mother, Father, Campion, Marcus',
-            answer: 'Raised By Wolves',
+            prompt:
+              'A team at Stanford engineers created a new type of this product that can generate electricity at night',
+            answer: 'Solar panels',
           },
           {
-            prompt: 'Emily, Sylvie, Mindy, Gabriel',
-            answer: 'Emily in Paris',
+            prompt:
+              'This animal, once-endangered, are growing in population from low 10,000 to 80,000 in 2022 globally thanks to conservations efforts.',
+            answer: 'Humpback whales',
           },
           {
-            prompt: 'Nina, Tyler, Kensey, Bode',
-            answer: 'Locke and Key',
+            prompt:
+              "This US state got its last-ever shipment of coal - it's last coal plant is closing in September",
+            answer: 'Hawaii',
           },
         ],
       },
       {
-        title: 'Not 2020',
+        title: 'Tiktok Food Trends 2022',
         questions: [
           {
-            prompt:
-              'Wuhan China was the first city that reported signs of this virus',
-            answer: 'What is Covid-19?',
+            prompt: 'The fluffiest, most impossible giant puffs of bread',
+            answer: 'Cloud Bread',
           },
           {
             prompt:
-              'The Olympics was supposed to be hosted in this country in 2020 but is now planned for 2021',
-            answer: 'What is Japan?',
+              'A delicious dessert contained in a vessel commonly used for coffee',
+            answer: 'Mug cake',
           },
           {
             prompt:
-              'Scientists released first-ever image of this astronomical region in 2019',
-            answer: 'What is a Black Hole',
+              'This sweet, tangy, spicy sauce is known for its vibrant color',
+            answer: 'Pink Sauce',
           },
           {
             prompt:
-              "Due to multiple failed negotiations over UK's withdrawl from the EU, this Prime Minister resigned in 2019",
-            answer: 'Who is Theresa May',
+              'a Mexican dish spread over a large surface meant to be shared with a big group',
+            answer: 'Nacho Table',
           },
           {
             prompt:
-              'On May 6 2019, The Duke and Duchess of Sussex welcomed this baby, their first child, into the world',
-            answer: 'What is Archie Harrison Mountbatten-Windsor?',
+              'This dish is a twist on the Charcuterie board: swapping meats and cheeses for another dairy product',
+            answer: 'Butter board',
           },
         ],
       },
@@ -340,165 +345,175 @@ const initialState: Round[] = [
     name: 'Round Two',
     categories: [
       {
-        title: 'Word "Chu" Lookin\' at',
+        title: 'Add a letter',
         questions: [
           {
-            prompt: 'An intimate friend or companion.',
-            answer: 'What is chum',
+            prompt:
+              'Add a letter to "cat" & you will end up with a nice conversation',
+            answer: 'chat',
           },
           {
-            prompt: 'Rounded and plump',
-            answer: 'What is chubby',
+            prompt:
+              'Add a letter to "hotel" & you end up with this less-expensive lodging place',
+            answer: 'hostel',
           },
           {
-            prompt: 'To laugh quietly or to oneself.',
-            answer: 'What is chuckle',
+            prompt:
+              'One extra letter makes a "uniformed" person this, meaning very much out of the loop',
+            answer: 'uninformed',
           },
           {
-            prompt: 'To make by the agitation of milk or cream',
-            answer: 'What is churn',
+            prompt:
+              'Here\'s a "riddle"; now add a letter & it\'s this hot, flat cooking surface',
+            answer: 'griddle',
           },
           {
-            prompt: 'Having a bad disposition; surly; rude',
-            answer: 'What is churlish',
+            prompt:
+              'Add a letter to "reel" & you\'ll be able to do this, take much pleasure',
+            answer: 'revel',
           },
         ],
       },
       {
-        title: 'Movie Numbers',
+        title: 'Technology Abbreviations',
         questions: [
           {
-            prompt: '(Title) ____ Days of Summer ',
-            answer: 'What is 500',
+            prompt: 'WYSIWYG (Web Editor)',
+            answer: 'What You See Is What You Get',
           },
           {
-            prompt: '(Quote) "This is Sparta"',
-            answer: 'What is 300',
+            prompt: 'CNN (Machine Learning)',
+            answer: 'Convolutional Neural Network',
           },
           {
-            prompt: '(Quote) "What\'s in the Box?"',
-            answer: 'What is Seven?',
+            prompt: 'OLAP (Data)',
+            answer: 'Online Analytical Processing',
           },
           {
-            prompt: '(Title) Blade Runner ____',
-            answer: 'What is 2049',
+            prompt: 'CORS (Web Security)',
+            answer: 'Cross-Origin Resource Sharing',
           },
           {
-            prompt: '(Title) Assault on Precinct ____ ',
-            answer: 'What is 13',
+            prompt: 'PHP (Web Language)',
+            answer: 'PHP: Hypertext Preprocessor (People Helping People)',
           },
         ],
       },
       {
-        title: '"Jeopardy" Jeopardy',
+        title: 'It\'s "al" Delicious',
         questions: [
           {
-            prompt: 'Wagering this dollar amount is against jeopardy rules',
-            answer: 'What is 69, 666, 14, 88, 1488?',
+            prompt:
+              'a type of tree nut that is often eaten as a snack or used in cooking and baking',
+            answer: 'Almond',
           },
           {
             prompt:
-              'In 1997, Trebek and this game show host switched roles as an April Fools joke.',
-            answer: 'Who is Pat Sajak',
+              'Named for a Roman restaurateur, this simple dish is known for its sauce of butter, Parmesan & heavy cream',
+            answer: 'Alfredo',
           },
           {
             prompt:
-              'The name of the AI that beat the two best human Jeopardy players in 2011',
-            answer: 'What is Watson',
+              'a type of Mexican dish made with spit-grilled pork that is marinated in a blend of chili peppers, pineapple, and other spices',
+            answer: 'Al pastor',
           },
           {
             prompt:
-              'Ken Jennings holds the record for most consecutive appearances on Jeopardy with this many appearances',
-            answer: 'What is 75',
+              'water that has a higher pH level than tap water, which some people believe has health benefits.',
+            answer: 'Alkaline water',
           },
           {
-            prompt: "The title of Jeopardy's theme song",
-            answer: 'What is "Think!"',
+            prompt:
+              "Made from pimiento berry, it's so-named because it tastes like nutmeg, cinnamon & cloves",
+            answer: 'Allspice',
           },
         ],
       },
       {
-        title: 'Double Jeopardy',
+        title: 'S. American Geography',
         questions: [
           {
             prompt:
-              'If you want to go to Harvard Law, better ace this four-letter test used as a criterion for admission',
-            answer: 'What is LSAT?',
+              'This country has coastlines on both the Caribbean Sea and the Pacific Ocean',
+            answer: 'Colombia',
           },
           {
             prompt:
-              'Acts that lower the dignity of a trial may bring a fine or jail sentence if you’re held in this.',
-            answer: 'What is Contempt of court',
-          },
-          {
-            prompt: 'A claim upon property to secure payment of a debt.',
-            answer: 'What is a Lien',
+              "Founded in 1554, this city is Brazil's industrial & financial center",
+            answer: 'Sao Paulo',
           },
           {
             prompt:
-              'This US constituational ammendment limits the number of times a person can be elected President.',
-            answer: 'What is 22nd',
+              "The Uyuni Salt Flat, the world's largest salt flat, is located in this country",
+            answer: 'Bolivia',
           },
           {
             prompt:
-              "This US law requires all federal agencies' information and electronic services to be accessible to those with disabilities.",
-            answer: 'What is Section 508/504 of the Rehabilitation Act of 1973',
+              "The Amazon River, the world's largest river by volume, flows  into this ocean",
+            answer: 'Atlantic Ocean',
+          },
+          {
+            prompt:
+              "Punta Pariñas, South America's westernmost mainland point, lies in this country's Talara province",
+            answer: 'Peru',
           },
         ],
       },
       {
-        title: 'Healthy Foods',
+        title: 'Science "K"lass',
         questions: [
           {
-            prompt: "Popeye's favorite food",
-            answer: 'What is Spinach',
-          },
-          {
-            prompt: 'This vetetable was the first to be grown in space',
-            answer: 'What is a potato',
-          },
-          {
-            prompt: 'dish served "A la Crecy" is garnished with this vegitable',
-            answer: 'What are carrots',
+            prompt: 'The energy possessed by a body due to its motion',
+            answer: 'Kinetic energy',
           },
           {
             prompt:
-              'Apples, pears, peaches, and plums are all members of this plant family.',
-            answer: 'What is a rose',
+              "Almost exactly equal to the mass of 1,000 cubic centimeters of water, it's a base unit in the metric system",
+            answer: 'kilogram',
           },
           {
-            prompt: 'This is the most widely consumed fruit in the world',
-            answer: 'What is a mango',
+            prompt: 'Just add 273.15 to your Celsius reading to get this',
+            answer: 'kelvin',
+          },
+          {
+            prompt:
+              'This noble gas used in high-speed photography lamps takes its name from the Greek for "hidden"',
+            answer: 'krypton',
+          },
+          {
+            prompt:
+              "A substance to start a fire, or the point that's the lowest temperature at which something will autoignite",
+            answer: 'kindling point',
           },
         ],
       },
       {
-        title: 'Random Arithmetics',
+        title: 'World Landmarks',
         questions: [
           {
             prompt:
-              'Number of legs spiders have + The number of chambers of a human heart',
-            answer: '8 + 4',
+              'In London, this landmark was completed in 1858 and is a clock tower located at the north end of the Houses of Parliament.',
+            answer: 'Big Ben',
           },
           {
             prompt:
-              'the number of seats in the US Senate - The number of major divisions of an insect body',
-            answer: '100 - 3',
+              'This ancient city in Peru was the capital of the Inca Empire and is a UNESCO World Heritage Site.',
+            answer: 'Machu Picchu',
           },
           {
             prompt:
-              'Number of electrons in a hydrogen atom + the current season of the Simpsons',
-            answer: '1 + 32',
+              'This iconic landmark near the Champ de Mars has 1,665 steps',
+            answer: 'The Eiffel Tower',
           },
           {
             prompt:
-              'The number of member states (countries) in the UN + the number of timezones in China',
-            answer: '193 + 1',
+              'This architectural marvel in Rome was built in 80 AD and was originally used for gladiator fights',
+            answer: 'Colosseum',
           },
           {
             prompt:
-              'The number of characters allowed in the first Tweets - Length of an Olympic swimming pool in meters',
-            answer: '140 - 50',
+              'This ancient Greek temple is located on the island of Rhodes and was one of the Seven Wonders of the Ancient World.',
+            answer: 'What is the Colossus of Rhodes',
           },
         ],
       },

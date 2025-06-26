@@ -4,20 +4,16 @@ import { Team } from '../../types'
 const slice = createSlice({
   name: 'teams',
   initialState: [
-    // {
-    //   name: 'Hamnet',
-    //   score: 0,
-    // },
     {
-      name: 'Promised Land',
+      name: 'Team Ocean',
       score: 0,
     },
     {
-      name: 'Uncanny Valley',
+      name: 'Team Sunshine',
       score: 0,
     },
     {
-      name: 'Vanishing Half',
+      name: 'Team Mountain',
       score: 0,
     },
   ] as Team[],
