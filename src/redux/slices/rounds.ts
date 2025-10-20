@@ -27,6 +27,7 @@ const initialState: Round[] = [
           {
             prompt: '5 + 5 equals to this',
             answer: 'What is 10',
+            dailyDouble: true,
           },
         ],
       },
@@ -38,7 +39,7 @@ const initialState: Round[] = [
             answer: 'What is x+2',
           },
           {
-            prompt: 'Simplified Term of 12a + 26b -4b – 16a',
+            prompt: 'Simplified Term of 12a + 26b -4b - 16a',
             answer: '-4a + 22b',
           },
           {
@@ -46,7 +47,7 @@ const initialState: Round[] = [
             answer: '26',
           },
           {
-            prompt: 'Expanded view of (x – 4)(x + 5)',
+            prompt: 'Expanded view of (x - 4)(x + 5)',
             answer: 'x^2+x-20',
           },
           {

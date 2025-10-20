@@ -33,6 +33,8 @@ function App() {
   const pointsList = rounds[currentRoundIndex]?.pointsList
   const categories = rounds[currentRoundIndex]?.categories
 
+  const maxRoundWager = pointsList[4]
+
   const dispatch = useDispatch()
 
   return (
@@ -50,6 +52,14 @@ function App() {
           <QuestionView
             isOpen={isOpen}
             teams={teams}
+            dailyDouble={
+              activeQuestion
+                ? categories[activeQuestion.categoryIndex]?.questions[
+                    activeQuestion.questionIndex
+                  ].dailyDouble === true
+                : false
+            }
+            maxRoundWager={maxRoundWager}
             points={
               activeQuestion ? pointsList[activeQuestion.questionIndex] : 0
             }

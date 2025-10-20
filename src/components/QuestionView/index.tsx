@@ -11,10 +11,19 @@ type Prop = {
   isOpen: boolean
   question: string
   points: number
+  dailyDouble: boolean
+  maxRoundWager: number
   teams: Team[]
 }
 
-const Component: React.FC<Prop> = ({ question, isOpen, teams, points }) => {
+const Component: React.FC<Prop> = ({
+  question,
+  isOpen,
+  teams,
+  points,
+  maxRoundWager,
+  dailyDouble,
+}) => {
   const dispatch = useDispatch()
 
   return (
@@ -48,7 +57,16 @@ const Component: React.FC<Prop> = ({ question, isOpen, teams, points }) => {
       </div>
       <div className="teams">
         {teams.map((_, i) => {
-          return <TeamView points={points} team={_} teamIndex={i} key={i} />
+          return (
+            <TeamView
+              points={points}
+              team={_}
+              teamIndex={i}
+              key={i}
+              maxRoundWager={maxRoundWager}
+              isWagerEditable={dailyDouble}
+            />
+          )
         })}
       </div>
     </ReactModal>

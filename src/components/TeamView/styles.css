@@ -1,0 +1,17 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wager-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 1.5vh;
+  gap: 5px;
+}
+.result {
+  display: flex;
+  flex-direction: row;
+}
