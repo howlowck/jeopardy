@@ -1,8 +1,13 @@
-require('dotenv').config()
-const express = require('express')
-const path = require('path')
-const app = express()
+import 'dotenv/config'
+import express from 'express'
+import path from 'path'
+import { fileURLToPath } from 'url'
+import { dirname } from 'path'
 
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+const app = express()
 const port = process.env.SERVER_PORT || '3003'
 
 app.use(express.static(path.join(__dirname, 'build')))
