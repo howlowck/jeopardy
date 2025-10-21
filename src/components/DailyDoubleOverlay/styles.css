@@ -1,0 +1,130 @@
+.daily-double-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  pointer-events: auto;
+  overflow: hidden;
+  background: radial-gradient(
+      circle at 10% 10%,
+      rgba(255, 255, 255, 0.06),
+      transparent 10%
+    ),
+    linear-gradient(
+      120deg,
+      #2a00ff 0%,
+      #8a00ff 20%,
+      #ff5ca8 50%,
+      #ffd24d 80%,
+      #ffd24d 100%
+    );
+}
+
+/* decorative moving stars */
+.dd-stars {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.9) 0.8px,
+    transparent 0.8px
+  );
+  background-size: 120px 120px;
+  opacity: 0.6;
+  mix-blend-mode: screen;
+  filter: blur(1px);
+  transform: translateZ(0);
+}
+
+.dd-background {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.12),
+      transparent 10%
+    ),
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(255, 255, 255, 0.06),
+      transparent 10%
+    );
+  opacity: 0.9;
+}
+
+/* grid floor */
+.dd-grid {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10vh;
+  height: 60vh;
+  background: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.03) 0 1px,
+      transparent 1px 30px
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0));
+  transform-origin: center top;
+  transform: perspective(800px) rotateX(75deg) scaleX(1.4);
+  mix-blend-mode: screen;
+  opacity: 0.9;
+}
+
+.dd-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  /* final static state (no pop animation) */
+  transform: translateY(-6vh) scale(1);
+  opacity: 1;
+}
+
+.dd-title-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.dd-title {
+  margin: 0;
+  color: #ffffff;
+  /* reduced by one third (24rem -> 16rem) */
+  font-size: 16rem;
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0 0.2em;
+  /* scaled stroke and shadows */
+  -webkit-text-stroke: 8px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 12px 28px rgba(0, 0, 0, 0.65), 0 4px 12px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(255, 255, 255, 0.12);
+  display: inline-block;
+  transform: translateZ(0) rotateX(0deg);
+}
+
+/* reflection */
+.dd-reflection {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  transform: translateY(12%);
+  opacity: 0.25;
+  overflow: hidden;
+  pointer-events: none;
+}
+.dd-reflection .dd-title {
+  filter: blur(2px) brightness(0.9) contrast(1.1);
+  transform: scaleY(-1) translateY(6%);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .dd-title {
+    /* responsive scaled down: 8.4rem */
+    font-size: 8.4rem;
+    -webkit-text-stroke: 4px rgba(0, 0, 0, 0.25);
+  }
+}

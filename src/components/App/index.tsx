@@ -5,6 +5,7 @@ import { QuestionId, ReduxState, Round, Team } from '../../types'
 import { useDispatch, useSelector } from 'react-redux'
 import QuestionView from '../QuestionView'
 import RoundSelectionView from '../RoundSelection'
+import DailyDoubleOverlay from '../DailyDoubleOverlay'
 import { completeRound } from '../../redux/epics/completeRoundEpic'
 import { Redirect, Route, Switch } from 'wouter'
 
@@ -71,6 +72,7 @@ function App() {
                 : ''
             }
           />
+          <DailyDoubleOverlay />
           <RoundSelectionView
             rounds={rounds}
             completedRounds={completedRounds}
