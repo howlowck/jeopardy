@@ -11,18 +11,22 @@ const initialState: Round[] = [
           {
             prompt: 'This is one plus one',
             answer: 'What is 2',
+            dailyDouble: true,
           },
           {
             prompt: 'The expression 2 + 2 will yield this number',
             answer: 'What is 4',
+            dailyDouble: true,
           },
           {
             prompt: 'Adding three and three will give you this',
             answer: 'What is 6',
+            dailyDouble: true,
           },
           {
             prompt: 'This number is 4 + 4',
             answer: 'What is 8',
+            dailyDouble: true,
           },
           {
             prompt: '5 + 5 equals to this',

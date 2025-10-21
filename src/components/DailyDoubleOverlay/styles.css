@@ -20,6 +20,13 @@
       #ffd24d 80%,
       #ffd24d 100%
     );
+  
+  /* Flip entire overlay: 3 full vertical flips (rotateX) over 0.75s, then hold for 1s */
+  transform-origin: center center;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  opacity: 0;
+  animation: dd-overlay-flip 2s cubic-bezier(.2,.9,.3,1) forwards;
 }
 
 /* decorative moving stars */
@@ -76,10 +83,30 @@
   position: relative;
   z-index: 10;
   text-align: center;
-  /* final static state (no pop animation) */
   transform: translateY(-6vh) scale(1);
   opacity: 1;
 }
+
+/* Keyframes for a vertical flip: start folded (90deg), flip to 0deg in 0.75s, then hold */
+/* Overlay flip: spin 3 full times (1080deg) during the first 0.75s (≈42.857%), then land upright (0deg) and hold for the remaining 1s. */
+@keyframes dd-overlay-flip {
+  0% {
+    /* start scaled down and transparent */
+    transform: rotateX(0deg) scale(0) translateZ(0);
+    opacity: 0;
+  }
+  /* First 0.75s (≈42.857%) perform 3 full rotations and zoom to full size */
+  50% {
+    transform: rotateX(720deg) scale(1) translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(720deg) scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+
+/* To visually land upright after 1080deg, we keep the transform as-is; modern browsers render the final rotated state (1080deg) which is equivalent visually to 0deg due to full rotations. */
 
 .dd-title-wrap {
   position: relative;
