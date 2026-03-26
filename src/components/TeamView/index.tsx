@@ -17,59 +17,56 @@ const Component: React.FC<Prop> = ({ team, points, teamIndex }) => {
   const [isPlaying, setPlaying] = useState(false)
 
   return (
-    <div className="team">
-      <div className="result">
-        <div
-          className="timer team-timer"
-          onClick={() => {
-            setPlaying(!isPlaying)
-          }}
-        >
-          <CountdownCircleTimer
-            duration={10}
-            isLinearGradient={false}
-            strokeWidth={5}
-            colors={[
-              ['#000', 0.75],
-              ['#f00', 0.25],
-            ]}
-            isPlaying={isPlaying}
-            size={60}
-          >
-            {({ remainingTime }) => remainingTime}
-          </CountdownCircleTimer>
-        </div>
-        <i
-          className="correct material-icons"
-          onClick={() => {
-            dispatch(addScore({ teamIndex: teamIndex, points }))
-            dispatch(close())
-          }}
-        >
-          check
-        </i>
-        <div>
-          {team.name} <br />{' '}
-          <span style={team.score < 0 ? { color: 'red' } : {}}>
-            {team.score}
-          </span>
-        </div>
-        <i
-          className="incorrect material-icons"
-          onClick={() =>
-            dispatch(
-              removeScore({
-                teamIndex: teamIndex,
-                points,
-              })
-            )
-          }
-        >
-          close
-        </i>
-      </div>
-    </div>
-  )
+			<div className="team">
+				<div className="result">
+					<div
+						className="timer team-timer"
+						onClick={() => {
+							setPlaying(!isPlaying);
+						}}
+					>
+						<CountdownCircleTimer
+							duration={10}
+							strokeWidth={5}
+							colors={["#000000", "#ff0000"]}
+							colorsTime={[10, 0]}
+							isPlaying={isPlaying}
+							size={60}
+						>
+							{({ remainingTime }) => remainingTime}
+						</CountdownCircleTimer>
+					</div>
+					<i
+						className="correct material-icons"
+						onClick={() => {
+							dispatch(addScore({ teamIndex: teamIndex, points }));
+							dispatch(close());
+						}}
+					>
+						check
+					</i>
+					<div>
+						{team.name} <br />{" "}
+						<span style={team.score < 0 ? { color: "red" } : {}}>
+							{team.score}
+						</span>
+					</div>
+					<i
+						className="incorrect material-icons"
+						onClick={() =>
+							dispatch(
+								removeScore({
+									teamIndex: teamIndex,
+									points,
+								}),
+							)
+						}
+					>
+						close
+					</i>
+				</div>
+			</div>
+		);
 }
 
 export default Component

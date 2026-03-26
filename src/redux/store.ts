@@ -1,10 +1,11 @@
-import { configureStore, Store } from '@reduxjs/toolkit'
-import { ReduxState } from '../types'
+import { configureStore, Tuple, Action } from "@reduxjs/toolkit";
 import reducer from './reducer'
 import { createEpicMiddleware } from 'redux-observable'
 import rootEpic from './epic'
 
-const epicMiddleware = createEpicMiddleware()
+type ReduxState = ReturnType<typeof reducer>;
+
+const epicMiddleware = createEpicMiddleware<Action, Action>();
 
 // convert object to string and store in localStorage
 const saveToLocalStorage = (state: ReduxState): void => {
@@ -33,11 +34,11 @@ const loadFromLocalStorage = (): ReduxState | undefined => {
 
 const preloaded = loadFromLocalStorage()
 
-const store: Store = configureStore({
-  reducer,
-  preloadedState: preloaded as ReduxState,
-  middleware: [epicMiddleware],
-})
+const store = configureStore({
+	reducer,
+	preloadedState: preloaded as ReduxState,
+	middleware: () => new Tuple(epicMiddleware),
+});
 
 epicMiddleware.run(rootEpic)
 

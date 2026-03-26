@@ -27,53 +27,55 @@ const Component: React.FC<Prop> = ({
   const dispatch = useDispatch()
 
   return (
-    <ReactModal
-      className="modal question-view"
-      isOpen={isOpen}
-      overlayClassName="overlay"
-    >
-      <i
-        className="material-icons close"
-        onClick={() => {
-          dispatch(close())
-        }}
-      >
-        close
-      </i>
-      <div className="timer question-timer">
-        <CountdownCircleTimer
-          duration={20}
-          colors={[['#ffffff', 1]]}
-          trailColor="#060CE9"
-          isPlaying
-          size={80}
-        >
-          {({ remainingTime }) => remainingTime}
-        </CountdownCircleTimer>
-      </div>
+			<ReactModal
+				className="modal question-view"
+				isOpen={isOpen}
+				overlayClassName="overlay"
+			>
+				<i
+					className="material-icons close"
+					onClick={() => {
+						dispatch(close());
+					}}
+				>
+					close
+				</i>
+				<div className="timer question-timer">
+					<CountdownCircleTimer
+						duration={20}
+						colors="#ffffff"
+						trailColor="#060CE9"
+						isPlaying
+						size={80}
+					>
+						{({ remainingTime }) => remainingTime}
+					</CountdownCircleTimer>
+				</div>
 
-      <div className="question">
-        <span>{question}</span>
-      </div>
-      <div className="teams">
-        {dailyDouble && typeof confirmedTeam === 'number'
-          ? // only show the confirmed team for daily double
-            teams
-              .filter((_, i) => i === confirmedTeam)
-              .map((t, i) => (
-                <TeamView
-                  points={points}
-                  team={t}
-                  teamIndex={confirmedTeam}
-                  key={confirmedTeam}
-                />
-              ))
-          : teams.map((_, i) => {
-              return <TeamView points={points} team={_} teamIndex={i} key={i} />
-            })}
-      </div>
-    </ReactModal>
-  )
+				<div className="question">
+					<span>{question}</span>
+				</div>
+				<div className="teams">
+					{dailyDouble && typeof confirmedTeam === "number"
+						? // only show the confirmed team for daily double
+							teams
+								.filter((_, i) => i === confirmedTeam)
+								.map((t, i) => (
+									<TeamView
+										points={points}
+										team={t}
+										teamIndex={confirmedTeam}
+										key={confirmedTeam}
+									/>
+								))
+						: teams.map((_, i) => {
+								return (
+									<TeamView points={points} team={_} teamIndex={i} key={i} />
+								);
+							})}
+				</div>
+			</ReactModal>
+		);
 }
 
 export default Component
