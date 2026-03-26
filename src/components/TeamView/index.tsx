@@ -8,46 +8,16 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 
 type Prop = {
   points: number
-  maxRoundWager: number
   team: Team
   teamIndex: number
-  isWagerEditable?: boolean
 }
 
-const Component: React.FC<Prop> = ({
-  team,
-  points,
-  teamIndex,
-  maxRoundWager,
-  isWagerEditable,
-}) => {
+const Component: React.FC<Prop> = ({ team, points, teamIndex }) => {
   const dispatch = useDispatch()
   const [isPlaying, setPlaying] = useState(false)
-  const [wager, setWager] = useState<number>(points)
-  const maxWager = team.score < maxRoundWager ? maxRoundWager : team.score
 
   return (
     <div className="team">
-      {isWagerEditable && (
-        <div className="wager-form">
-          <label>Wager:</label>
-          <input
-            type="number"
-            value={wager}
-            min={0}
-            max={maxWager}
-            disabled={!isWagerEditable}
-            onChange={(e) => {
-              let val = parseInt(e.target.value)
-              if (isNaN(val)) val = 0
-              if (val > maxWager) val = maxWager
-              setWager(val)
-            }}
-          />
-          <p>(Max {maxWager})</p>
-        </div>
-      )}
-
       <div className="result">
         <div
           className="timer team-timer"
@@ -72,7 +42,7 @@ const Component: React.FC<Prop> = ({
         <i
           className="correct material-icons"
           onClick={() => {
-            dispatch(addScore({ teamIndex: teamIndex, points: wager }))
+            dispatch(addScore({ teamIndex: teamIndex, points }))
             dispatch(close())
           }}
         >
@@ -87,7 +57,12 @@ const Component: React.FC<Prop> = ({
         <i
           className="incorrect material-icons"
           onClick={() =>
-            dispatch(removeScore({ teamIndex: teamIndex, points: wager }))
+            dispatch(
+              removeScore({
+                teamIndex: teamIndex,
+                points,
+              })
+            )
           }
         >
           close

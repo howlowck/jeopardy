@@ -8,6 +8,7 @@ import currentRound from './slices/currentRound'
 import roundSelectionModal from './slices/roundSelectionModal'
 import completedRounds from './slices/completedRounds'
 import dailyDouble from './slices/dailyDouble'
+import dailyDoubleWager from './slices/dailyDoubleWager'
 // Import Reducers Here (do not delete this line)
 
 export default combineReducers({
@@ -20,5 +21,6 @@ export default combineReducers({
   roundSelectionModal,
   completedRounds,
   dailyDouble,
+  dailyDoubleWager,
   // Add Reducers Here (do not delete this line)
 })

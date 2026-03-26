@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles.css'
 import Board from '../Board'
 import { QuestionId, ReduxState, Round, Team } from '../../types'
@@ -6,7 +6,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import QuestionView from '../QuestionView'
 import RoundSelectionView from '../RoundSelection'
 import DailyDoubleOverlay from '../DailyDoubleOverlay'
+import WagerModal from '../WagerModal'
 import { completeRound } from '../../redux/epics/completeRoundEpic'
+import { open as openQuestion } from '../../redux/slices/questionModal'
 import { Redirect, Route, Switch } from 'wouter'
 
 function App() {
@@ -37,6 +39,16 @@ function App() {
   const maxRoundWager = pointsList[4]
 
   const dispatch = useDispatch()
+  const ddConfirmedTeam = useSelector<ReduxState, number | null>(
+    (_) => _.dailyDoubleWager.confirmedTeamIndex
+  )
+
+  // when a wager is confirmed, open the question modal
+  useEffect(() => {
+    if (ddConfirmedTeam !== null) {
+      dispatch(openQuestion())
+    }
+  }, [ddConfirmedTeam, dispatch])
 
   return (
     <div className="App">
@@ -60,7 +72,6 @@ function App() {
                   ].dailyDouble === true
                 : false
             }
-            maxRoundWager={maxRoundWager}
             points={
               activeQuestion ? pointsList[activeQuestion.questionIndex] : 0
             }
@@ -73,6 +84,7 @@ function App() {
             }
           />
           <DailyDoubleOverlay />
+          <WagerModal teams={teams} maxRoundWager={maxRoundWager} />
           <RoundSelectionView
             rounds={rounds}
             completedRounds={completedRounds}

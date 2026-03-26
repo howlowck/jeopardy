@@ -1,0 +1,25 @@
+.wager-modal h2 {
+  margin-top: 0;
+}
+.wager-team-select {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  margin: 12px 0;
+}
+.wager-team-select label {
+  cursor: pointer;
+}
+.wager-team-select label.selected {
+  font-weight: 700;
+}
+.wager-input {
+  margin: 12px 0;
+}
+.wager-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.wager-actions button {
+  padding: 8px 14px;
+}

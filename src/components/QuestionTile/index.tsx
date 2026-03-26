@@ -7,6 +7,7 @@ import {
   open as openDD,
   close as closeDD,
 } from '../../redux/slices/dailyDouble'
+import { open as openWager } from '../../redux/slices/dailyDoubleWager'
 import { ReduxState } from '../../types'
 type Prop = {
   points: number
@@ -48,11 +49,11 @@ const Component: React.FC<Prop> = ({
         )
 
         if (question?.dailyDouble) {
-          // show overlay, wait ~1.8s then open modal
+          // show overlay, wait ~1.8s then open wager modal
           dispatch(openDD())
           setTimeout(() => {
             dispatch(closeDD())
-            dispatch(open())
+            dispatch(openWager({ maxWager: points }))
           }, 1800)
         } else {
           dispatch(open())

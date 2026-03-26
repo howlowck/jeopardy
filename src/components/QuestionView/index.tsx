@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactModal from 'react-modal'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { close } from '../../redux/slices/questionModal'
 import { Team } from '../../types'
 import TeamView from '../TeamView'
@@ -11,18 +11,18 @@ type Prop = {
   isOpen: boolean
   question: string
   points: number
-  dailyDouble: boolean
-  maxRoundWager: number
   teams: Team[]
+  dailyDouble: boolean
+  confirmedTeamIndex?: number
 }
 
 const Component: React.FC<Prop> = ({
-  question,
   isOpen,
-  teams,
+  question,
   points,
-  maxRoundWager,
+  teams,
   dailyDouble,
+  confirmedTeamIndex: confirmedTeam,
 }) => {
   const dispatch = useDispatch()
 
@@ -56,18 +56,21 @@ const Component: React.FC<Prop> = ({
         <span>{question}</span>
       </div>
       <div className="teams">
-        {teams.map((_, i) => {
-          return (
-            <TeamView
-              points={points}
-              team={_}
-              teamIndex={i}
-              key={i}
-              maxRoundWager={maxRoundWager}
-              isWagerEditable={dailyDouble}
-            />
-          )
-        })}
+        {dailyDouble && typeof confirmedTeam === 'number'
+          ? // only show the confirmed team for daily double
+            teams
+              .filter((_, i) => i === confirmedTeam)
+              .map((t, i) => (
+                <TeamView
+                  points={points}
+                  team={t}
+                  teamIndex={confirmedTeam}
+                  key={confirmedTeam}
+                />
+              ))
+          : teams.map((_, i) => {
+              return <TeamView points={points} team={_} teamIndex={i} key={i} />
+            })}
       </div>
     </ReactModal>
   )
