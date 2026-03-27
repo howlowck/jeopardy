@@ -168,178 +168,165 @@ const initialState: Round[] = [
     name: 'Round One',
     categories: [
       {
-        title: 'What a year!',
+        title: 'Word "Chu" Lookin\' at',
         questions: [
           {
-            prompt: 'Argentina win 2022 World Cup title',
-            answer: 'December',
+            prompt: 'An intimate friend or companion.',
+            answer: 'What is chum',
           },
           {
-            prompt:
-              'Apple becomes the first company to (briefly) reach $3 trillion market value',
-            answer: 'January',
+            prompt: 'Rounded and plump',
+            answer: 'What is chubby',
           },
           {
-            prompt: 'Will Smith slaps Chris Rock on stage',
-            answer: 'February',
+            prompt: 'To laugh quietly or to oneself.',
+            answer: 'What is chuckle',
           },
           {
-            prompt: 'Liz Truss resigns as British Prime Minister after 44 days',
-            answer: 'October 20',
+            prompt: 'To make by the agitation of milk or cream',
+            answer: 'What is churn',
           },
           {
-            prompt:
-              'Microsoft announces its intent to acquire Activision Blizzard for $68.7 Billion',
-            answer: 'January 18',
+            prompt: 'Having a bad disposition; surly; rude',
+            answer: 'What is churlish',
           },
         ],
       },
       {
-        title: 'Good Bye 2022',
+        title: 'Movie Numbers',
         questions: [
           {
-            prompt:
-              'He was the beloved TV dad on "Full House" and "America\'s Funniest Home Videos" host',
-            answer: 'Bob Saget',
+            prompt: '(Title) ____ Days of Summer ',
+            answer: 'What is 500',
           },
           {
-            prompt:
-              'In February, she received Platinum Jubilee marking 70 years since she acceded to the British throne',
-            answer: 'Queen Elizabeth II',
+            prompt: '(Quote) "This is Sparta"',
+            answer: 'What is 300',
           },
           {
-            prompt:
-              'He was the the inventive prop comedian known for smashing watermelons as part of his act',
-            answer: 'Gallagher',
+            prompt: '(Quote) "What\'s in the Box?"',
+            answer: 'What is Seven?',
           },
           {
-            prompt:
-              'She was the first female US secretary of state (1997 to 2001)',
-            answer: 'Madeleine Albright',
+            prompt: '(Title) Blade Runner ____',
+            answer: 'What is 2049',
           },
           {
-            prompt:
-              ' won a total of six Grammys over his career, including Best Rap Solo for "Gangsta\'s Paradise" in 1996.',
-            answer: 'Coolio',
+            prompt: '(Title) Assault on Precinct ____ ',
+            answer: 'What is 13',
           },
         ],
       },
       {
-        title: 'Science 2022',
+        title: '"Jeopardy" Jeopardy',
         questions: [
           {
-            prompt:
-              'In May 2022, scientists unveiled the first image of cosmic phenomenon at the center of our galaxy.',
-            answer: 'black hole',
+            prompt: 'Wagering this dollar amount is against jeopardy rules',
+            answer: 'What is 69, 666, 14, 88, 1488?',
           },
           {
             prompt:
-              'In July, the first images from this telescope were released to the public, showing the splendor of our galaxy.',
-            answer: 'James Webb Space Telescope',
+              'In 1997, Trebek and this game show host switched roles as an April Fools joke.',
+            answer: 'Who is Pat Sajak',
           },
           {
             prompt:
-              'In November, OpenAI released this AI chatbot, taking the world by storm with its conversational ability.',
-            answer: 'ChatGPT',
+              'The name of the AI that beat the two best human Jeopardy players in 2011',
+            answer: 'What is Watson',
           },
           {
             prompt:
-              'In December, for the first time in history, scientists achieved a net energy gain using this process.',
-            answer: 'Fusion',
+              'Ken Jennings holds the record for most consecutive appearances on Jeopardy with this many appearances',
+            answer: 'What is 75',
           },
           {
-            prompt:
-              'In September, a vaccine developed for this disease by Oxford University. It has 80% effectiveness.',
-            answer: 'Malaria',
+            prompt: "The title of Jeopardy's theme song",
+            answer: 'What is "Think!"',
           },
         ],
       },
       {
-        title: 'Entertain Me 2022',
+        title: 'Double Jeopardy',
         questions: [
           {
             prompt:
-              'Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives.',
-            answer: 'Severance',
+              'If you want to go to Harvard Law, better ace this four-letter test used as a criterion for admission',
+            answer: 'What is LSAT?',
           },
           {
             prompt:
-              "Steven Grant discovers he's been granted the powers of an Egyptian moon god. ",
-            answer: 'Moon Knight',
+              'Acts that lower the dignity of a trial may bring a fine or jail sentence if you’re held in this.',
+            answer: 'What is Contempt of court',
+          },
+          {
+            prompt: 'A claim upon property to secure payment of a debt.',
+            answer: 'What is a Lien',
           },
           {
             prompt:
-              "A young chef from the fine dining world returns to Chicago to run his family's sandwich shop.",
-            answer: 'The Bear',
+              'This US constituational ammendment limits the number of times a person can be elected President.',
+            answer: 'What is 22nd',
           },
           {
             prompt:
-              'Follows the Garvey sisters, who are bound together by the death of their parents and a promise to always protect each other.',
-            answer: 'Bad Sisters',
-          },
-          {
-            prompt:
-              'Nadia and Martín live in the historical "Condesa" in Mexico City. Both are artists and share their home with a stray dog.',
-            answer: 'Amesterdam',
+              "This US law requires all federal agencies' information and electronic services to be accessible to those with disabilities.",
+            answer: 'What is Section 508/504 of the Rehabilitation Act of 1973',
           },
         ],
       },
       {
-        title: 'Good News 2022',
+        title: 'Healthy Foods',
         questions: [
           {
-            prompt:
-              "A woman to referee at this global sporting men's event for the first time",
-            answer: 'Stéphanie Frappart at the World Cup',
+            prompt: "Popeye's favorite food",
+            answer: 'What is Spinach',
+          },
+          {
+            prompt: 'This vetetable was the first to be grown in space',
+            answer: 'What is a potato',
+          },
+          {
+            prompt: 'dish served "A la Crecy" is garnished with this vegitable',
+            answer: 'What are carrots',
           },
           {
             prompt:
-              'A report found sales of this product are in "permanent decline" and likely have peaked in 2017',
-            answer: 'gas-powered cars',
+              'Apples, pears, peaches, and plums are all members of this plant family.',
+            answer: 'What is a rose',
           },
           {
-            prompt:
-              'A team at Stanford engineers created a new type of this product that can generate electricity at night',
-            answer: 'Solar panels',
-          },
-          {
-            prompt:
-              'This animal, once-endangered, are growing in population from low 10,000 to 80,000 in 2022 globally thanks to conservations efforts.',
-            answer: 'Humpback whales',
-          },
-          {
-            prompt:
-              "This US state got its last-ever shipment of coal - it's last coal plant is closing in September",
-            answer: 'Hawaii',
+            prompt: 'This is the most widely consumed fruit in the world',
+            answer: 'What is a mango',
           },
         ],
       },
       {
-        title: 'Tiktok Food Trends 2022',
+        title: 'Random Arithmetics',
         questions: [
           {
-            prompt: 'The fluffiest, most impossible giant puffs of bread',
-            answer: 'Cloud Bread',
+            prompt:
+              'Number of legs spiders have + The number of chambers of a human heart',
+            answer: '8 + 4',
           },
           {
             prompt:
-              'A delicious dessert contained in a vessel commonly used for coffee',
-            answer: 'Mug cake',
+              'the number of seats in the US Senate - The number of major divisions of an insect body',
+            answer: '100 - 3',
           },
           {
             prompt:
-              'This sweet, tangy, spicy sauce is known for its vibrant color',
-            answer: 'Pink Sauce',
+              'Number of electrons in a hydrogen atom + the current season of the Simpsons',
+            answer: '1 + 32',
           },
           {
             prompt:
-              'a Mexican dish spread over a large surface meant to be shared with a big group',
-            answer: 'Nacho Table',
+              'The number of member states (countries) in the UN + the number of timezones in China',
+            answer: '193 + 1',
           },
           {
             prompt:
-              'This dish is a twist on the Charcuterie board: swapping meats and cheeses for another dairy product',
-            answer: 'Butter board',
+              'The number of characters allowed in the first Tweets - Length of an Olympic swimming pool in meters',
+            answer: '140 - 50',
           },
         ],
       },
@@ -387,16 +374,16 @@ const initialState: Round[] = [
             answer: 'What You See Is What You Get',
           },
           {
+            prompt: 'GPT (AI)',
+            answer: 'Generative Pre-trained Transformer',
+          },          
+          {
             prompt: 'CNN (Machine Learning)',
             answer: 'Convolutional Neural Network',
           },
           {
             prompt: 'OLAP (Data)',
             answer: 'Online Analytical Processing',
-          },
-          {
-            prompt: 'CORS (Web Security)',
-            answer: 'Cross-Origin Resource Sharing',
           },
           {
             prompt: 'PHP (Web Language)',
