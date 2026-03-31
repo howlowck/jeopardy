@@ -5,15 +5,15 @@ const slice = createSlice({
   name: 'teams',
   initialState: [
     {
-      name: 'Team Ocean',
+      name: 'Team M365',
       score: 0,
     },
     {
-      name: 'Team Sunshine',
+      name: 'Team Copilot',
       score: 0,
     },
     {
-      name: 'Team Mountain',
+      name: 'Team Foundry',
       score: 0,
     },
   ] as Team[],
