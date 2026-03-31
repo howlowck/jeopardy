@@ -177,102 +177,102 @@
     ],
     "categories": [
       {
-        "title": "Word \"Chu\" Lookin' at",
+        "title": "World on a Plate",
         "questions": [
           {
-            "prompt": "An intimate friend or companion.",
-            "answer": "What is chum"
+            "prompt": "This spicy, fermented cabbage dish is a staple Korean side dish, often served with nearly every meal.",
+            "answer": "What is kimchi"
           },
           {
-            "prompt": "Rounded and plump",
-            "answer": "What is chubby"
+            "prompt": "Pockets of dough with savory fillings appear globally — gyoza in Japan, mandu in Korea, pierogi in Poland, and empanadas in Latin America. They all share this common name.",
+            "answer": "What are dumplings"
           },
           {
-            "prompt": "To laugh quietly or to oneself.",
-            "answer": "What is chuckle"
+            "prompt": "This Mexican street food, served on small corn tortillas with fillings like al pastor, carnitas, or barbacoa, has UNESCO Intangible Cultural Heritage roots tied to the traditional cuisine it comes from.",
+            "answer": "What is a taco"
           },
           {
-            "prompt": "To make by the agitation of milk or cream",
-            "answer": "What is churn"
+            "prompt": "This Lunar New Year tradition, popular in Southeast Asia, involves diners tossing a colorful raw fish salad high into the air for good luck and prosperity.",
+            "answer": "What is Lo Hei (Yusheng)"
           },
           {
-            "prompt": "Having a bad disposition; surly; rude",
-            "answer": "What is churlish"
+            "prompt": "Often called the \"queen of fruits,\" this thick purple-rinded Southeast Asian fruit has soft, sweet white segments inside and is so beloved that it's often the first thing travelers seek out when visiting Thailand or Malaysia.",
+            "answer": "What is mangosteen"
           }
         ]
       },
       {
-        "title": "Movie Numbers",
+        "title": "Places in Movies",
         "questions": [
           {
-            "prompt": "(Title) ____ Days of Summer ",
-            "answer": "What is 500"
+            "prompt": "(Place) _______ Holiday",
+            "answer": "What is Roman"
           },
           {
-            "prompt": "(Quote) \"This is Sparta\"",
-            "answer": "What is 300"
+            "prompt": "(Place) Train to _______",
+            "answer": "What is Busan"
           },
           {
-            "prompt": "(Quote) \"What's in the Box?\"",
-            "answer": "What is Seven?"
+            "prompt": "(Place) Midnight in _______",
+            "answer": "What is Paris"
           },
           {
-            "prompt": "(Title) Blade Runner ____",
-            "answer": "What is 2049"
+            "prompt": "(Place) The Fast and the Furious: _______ Drift",
+            "answer": "What is Tokyo"
           },
           {
-            "prompt": "(Title) Assault on Precinct ____ ",
-            "answer": "What is 13"
+            "prompt": "(Place) In this 2008 Baz Luhrmann epic, Nicole Kidman and Hugh Jackman drive cattle across the vast Outback in the movie simply titled _______.",
+            "answer": "What is Australia"
           }
         ]
       },
       {
-        "title": "\"Jeopardy\" Jeopardy",
+        "title": "Say Thank You!",
         "questions": [
           {
-            "prompt": "Wagering this dollar amount is against jeopardy rules",
-            "answer": "What is 69, 666, 14, 88, 1488?"
+            "prompt": "In Japan, you'd say this phrase (5 syllables) to express gratitude — often paired with a bow.",
+            "answer": "What is arigatou gozaimasu"
           },
           {
-            "prompt": "In 1997, Trebek and this game show host switched roles as an April Fools joke.",
-            "answer": "Who is Pat Sajak"
+            "prompt": "In Korea, this formal phrase ending in \"-mnida\" is the polite way to say thanks.",
+            "answer": "What is kamsahamnida (감사합니다)"
           },
           {
-            "prompt": "The name of the AI that beat the two best human Jeopardy players in 2011",
-            "answer": "What is Watson"
+            "prompt": "In Hindi, this short word meaning \"thank you\" shares its root with the Sanskrit word for praise.",
+            "answer": "What is dhanyavaad (धन्यवाद)"
           },
           {
-            "prompt": "Ken Jennings holds the record for most consecutive appearances on Jeopardy with this many appearances",
-            "answer": "What is 75"
+            "prompt": "In Mandarin Chinese, this two-syllable phrase is the standard way to thank someone.",
+            "answer": "What is xièxie (谢谢)"
           },
           {
-            "prompt": "The title of Jeopardy's theme song",
-            "answer": "What is \"Think!\""
+            "prompt": "In Thailand, this two-word phrase is followed by a polite particle — \"khrap\" or \"kha\" — depending on the speaker.",
+            "answer": "What is khob khun (ขอบคุณ)"
           }
         ]
       },
       {
-        "title": "Double Jeopardy",
+        "title": "Festival Fun!",
         "questions": [
           {
-            "prompt": "If you want to go to Harvard Law, better ace this four-letter test used as a criterion for admission",
-            "answer": "What is LSAT?"
+            "prompt": "This South Asian festival of lights is celebrated by lighting oil lamps and setting off fireworks across India and beyond.",
+            "answer": "What is Diwali"
           },
           {
-            "prompt": "Acts that lower the dignity of a trial may bring a fine or jail sentence if you're held in this.",
-            "answer": "What is Contempt of court"
+            "prompt": "Every January/February, millions across East and Southeast Asia celebrate this holiday with red envelopes, lion dances, and family reunions.",
+            "answer": "What is Lunar New Year"
           },
           {
-            "prompt": "A claim upon property to secure payment of a debt.",
-            "answer": "What is a Lien"
+            "prompt": "During this colorful Indian spring festival, people throw colored powders and water at each other in the streets.",
+            "answer": "What is Holi"
           },
           {
-            "prompt": "This US constituational ammendment limits the number of times a person can be elected President.",
-            "answer": "What is 22nd"
+            "prompt": "This Thai New Year celebration in April is famous for massive citywide water fights symbolizing cleansing and fresh starts.",
+            "answer": "What is Songkran"
           },
           {
-            "prompt": "This US law requires all federal agencies' information and electronic services to be accessible to those with disabilities.",
-            "answer": "What is Section 508/504 of the Rehabilitation Act of 1973"
+            "prompt": "This Japanese summer festival honors the spirits of ancestors — families light lanterns and perform the Bon Odori dance to guide spirits home.",
+            "answer": "What is Obon"
           }
         ]
       },
@@ -280,24 +280,24 @@
         "title": "Healthy Foods",
         "questions": [
           {
+            "prompt": "Made by coagulating soy milk, this protein-rich food has been a staple in East and Southeast Asian cuisine for over 2,000 years.",
+            "answer": "What is tofu"
+          },
+          {
             "prompt": "Popeye's favorite food",
             "answer": "What is Spinach"
+          },
+          {
+            "prompt": "This is the most widely consumed fruit in the world",
+            "answer": "What is a mango"
           },
           {
             "prompt": "This vetetable was the first to be grown in space",
             "answer": "What is a potato"
           },
           {
-            "prompt": "dish served \"A la Crecy\" is garnished with this vegitable",
-            "answer": "What are carrots"
-          },
-          {
             "prompt": "Apples, pears, peaches, and plums are all members of this plant family.",
             "answer": "What is a rose"
-          },
-          {
-            "prompt": "This is the most widely consumed fruit in the world",
-            "answer": "What is a mango"
           }
         ]
       },
@@ -305,24 +305,24 @@
         "title": "Random Arithmetics",
         "questions": [
           {
+            "prompt": "The number of years in a century - Number of medals awarded per Olympic event",
+            "answer": "100 - 3"
+          },
+          {
+            "prompt": "The year Microsoft was founded - Length of an Olympic swimming pool in meters",
+            "answer": "1975 - 50"
+          },
+          {
+            "prompt": "Number of electrons in a hydrogen atom + the number of total seasons of Game of Thrones",
+            "answer": "1 + 8"
+          },
+          {
             "prompt": "Number of legs spiders have + The number of chambers of a human heart",
             "answer": "8 + 4"
           },
           {
-            "prompt": "the number of seats in the US Senate - The number of major divisions of an insect body",
-            "answer": "100 - 3"
-          },
-          {
-            "prompt": "Number of electrons in a hydrogen atom + the current season of the Simpsons",
-            "answer": "1 + 32"
-          },
-          {
             "prompt": "The number of member states (countries) in the UN + the number of timezones in China",
             "answer": "193 + 1"
-          },
-          {
-            "prompt": "The number of characters allowed in the first Tweets - Length of an Olympic swimming pool in meters",
-            "answer": "140 - 50"
           }
         ]
       }
@@ -346,20 +346,20 @@
             "answer": "chat"
           },
           {
+            "prompt": "Add a letter to \"heel\" & you get a circular shape",
+            "answer": "wheel"
+          },
+          {
+            "prompt": "Add a letter in the middle of \"plan\" to make a word meaning flat land",
+            "answer": "plain"
+          },
+          {
             "prompt": "Add a letter to \"hotel\" & you end up with this less-expensive lodging place",
             "answer": "hostel"
           },
           {
             "prompt": "One extra letter makes a \"uniformed\" person this, meaning very much out of the loop",
             "answer": "uninformed"
-          },
-          {
-            "prompt": "Here's a \"riddle\"; now add a letter & it's this hot, flat cooking surface",
-            "answer": "griddle"
-          },
-          {
-            "prompt": "Add a letter to \"reel\" & you'll be able to do this, take much pleasure",
-            "answer": "revel"
           }
         ]
       },
@@ -389,77 +389,77 @@
         ]
       },
       {
-        "title": "It's \"al\" Delicious",
+        "title": "Rice is Nice!",
         "questions": [
           {
-            "prompt": "a type of tree nut that is often eaten as a snack or used in cooking and baking",
-            "answer": "Almond"
+            "prompt": "This Japanese dish of vinegared rice paired with seafood is the most iconic rice-based food enjoyed worldwide.",
+            "answer": "What is sushi"
           },
           {
-            "prompt": "Named for a Roman restaurateur, this simple dish is known for its sauce of butter, Parmesan & heavy cream",
-            "answer": "Alfredo"
+            "prompt": "This Korean rice bowl topped with vegetables",
+            "answer": " meat"
           },
           {
-            "prompt": "a type of Mexican dish made with spit-grilled pork that is marinated in a blend of chili peppers, pineapple, and other spices",
-            "answer": "Al pastor"
+            "prompt": "This fragrant Indian rice dish, layered with spiced meat and saffron, is a centerpiece at celebrations and weddings.",
+            "answer": "What is biryani"
           },
           {
-            "prompt": "water that has a higher pH level than tap water, which some people believe has health benefits.",
-            "answer": "Alkaline water"
+            "prompt": "This comforting rice porridge — called \"okayu\" in Japanese, \"juk\" in Korean, and \"zhou\" in Chinese — is a go-to across Asia when you're feeling under the weather.",
+            "answer": "What is congee"
           },
           {
-            "prompt": "Made from pimiento berry, it's so-named because it tastes like nutmeg, cinnamon & cloves",
-            "answer": "Allspice"
+            "prompt": "This Malaysian national dish features rice cooked in coconut milk and pandan leaf, traditionally wrapped in banana leaf and served with sambal, anchovies, and peanuts.",
+            "answer": "What is nasi lemak"
           }
         ]
       },
       {
-        "title": "S. American Geography",
+        "title": "Asian Geography",
         "questions": [
           {
-            "prompt": "This country has coastlines on both the Caribbean Sea and the Pacific Ocean",
-            "answer": "Colombia"
+            "prompt": "This Japanese city, famous for its street food and vibrant nightlife in Dotonbori, is hosting the 2025 World Expo.",
+            "answer": "What is Osaka"
           },
           {
-            "prompt": "Founded in 1554, this city is Brazil's industrial & financial center",
-            "answer": "Sao Paulo"
+            "prompt": "This Southeast Asian country is a close neighbour to the city of Microsoft's Asia-Pacific headquarters. It is made up of Peninsular and Borneo territories and is famous for its twin Petronas Towers.",
+            "answer": "What is Malaysia"
           },
           {
-            "prompt": "The Uyuni Salt Flat, the world's largest salt flat, is located in this country",
-            "answer": "Bolivia"
+            "prompt": "This ancient trade route connected China to the Mediterranean, spanning over 6,000 km across Central Asia.",
+            "answer": "What is the Silk Road"
           },
           {
-            "prompt": "The Amazon River, the world's largest river by volume, flows  into this ocean",
-            "answer": "Atlantic Ocean"
+            "prompt": "This strait between Sumatra and the Malay Peninsula carries roughly 25% of the world's traded goods, making it one of the busiest shipping lanes on Earth.",
+            "answer": "What is the Strait of Malacca"
           },
           {
-            "prompt": "Punta Pariñas, South America's westernmost mainland point, lies in this country's Talara province",
-            "answer": "Peru"
+            "prompt": "The world's most populous island, home to Indonesia's capital Jakarta, is this island.",
+            "answer": "What is Java"
           }
         ]
       },
       {
-        "title": "Science \"K\"lass",
+        "title": "It's 'E'nergy!",
         "questions": [
           {
-            "prompt": "The energy possessed by a body due to its motion",
-            "answer": "Kinetic energy"
+            "prompt": "This force that powers your lights",
+            "answer": " phones"
           },
           {
-            "prompt": "Almost exactly equal to the mass of 1,000 cubic centimeters of water, it's a base unit in the metric system",
-            "answer": "kilogram"
+            "prompt": "This scientist proposed E=mc²",
+            "answer": " forever linking mass and energy."
           },
           {
-            "prompt": "Just add 273.15 to your Celsius reading to get this",
-            "answer": "kelvin"
+            "prompt": "This term describes the variety of plant and animal life in a particular habitat — and its loss is a major environmental crisis.",
+            "answer": "What is ecosystem"
           },
           {
-            "prompt": "This noble gas used in high-speed photography lamps takes its name from the Greek for \"hidden\"",
-            "answer": "krypton"
+            "prompt": "This process breaks down rocks and soil over time through wind",
+            "answer": " water"
           },
           {
-            "prompt": "A substance to start a fire, or the point that's the lowest temperature at which something will autoignite",
-            "answer": "kindling point"
+            "prompt": "A total or partial blocking of the sun by the moon.",
+            "answer": "What is an eclipse"
           }
         ]
       },
@@ -467,24 +467,24 @@
         "title": "World Landmarks",
         "questions": [
           {
-            "prompt": "In London, this landmark was completed in 1858 and is a clock tower located at the north end of the Houses of Parliament.",
-            "answer": "Big Ben"
+            "prompt": "This sail-shaped building on the harbour in Australia's largest city is one of the most recognizable buildings in the world.",
+            "answer": "What is the Sydney Opera House"
           },
           {
-            "prompt": "This ancient city in Peru was the capital of the Inca Empire and is a UNESCO World Heritage Site.",
-            "answer": "Machu Picchu"
+            "prompt": "This iconic white marble building in India, often called a monument to love, is one of the New Seven Wonders of the World.",
+            "answer": "What is the Taj Mahal"
           },
           {
-            "prompt": "This iconic landmark near the Champ de Mars has 1,665 steps",
-            "answer": "The Eiffel Tower"
+            "prompt": "This hotel famous for its rooftop infinity pool connecting three towers has become Singapore's most recognizable building.",
+            "answer": "What is Marina Bay Sands"
           },
           {
-            "prompt": "This architectural marvel in Rome was built in 80 AD and was originally used for gladiator fights",
-            "answer": "Colosseum"
+            "prompt": "This volcanic island off the southern coast of South Korea is famous for its unique stone statues called \"dol hareubang\" and is a UNESCO World Heritage Site.",
+            "answer": "What is Jeju"
           },
           {
-            "prompt": "This ancient Greek temple is located on the island of Rhodes and was one of the Seven Wonders of the Ancient World.",
-            "answer": "What is the Colossus of Rhodes"
+            "prompt": "This bright red, traditional Japanese gate standing in water is one of Japan's most photographed landmarks, appearing to float during high tide.",
+            "answer": "What is the torii gate at Miyajima (Itsukushima)"
           }
         ]
       }
