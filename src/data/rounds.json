@@ -227,27 +227,27 @@
         ]
       },
       {
-        "title": "Say Thank You!",
+        "title": "Technology Abbreviations",
         "questions": [
           {
-            "prompt": "In Japan, you'd say this phrase (5 syllables) to express gratitude — often paired with a bow.",
-            "answer": "What is arigatou gozaimasu"
+            "prompt": "WYSIWYG (Web Editor)",
+            "answer": "What You See Is What You Get"
           },
           {
-            "prompt": "In Korea, this formal phrase ending in \"-mnida\" is the polite way to say thanks.",
-            "answer": "What is kamsahamnida (감사합니다)"
+            "prompt": "GPT (AI)",
+            "answer": "Generative Pre-trained Transformer"
           },
           {
-            "prompt": "In Hindi, this short word meaning \"thank you\" shares its root with the Sanskrit word for praise.",
-            "answer": "What is dhanyavaad (धन्यवाद)"
+            "prompt": "CNN (Machine Learning)",
+            "answer": "Convolutional Neural Network"
           },
           {
-            "prompt": "In Mandarin Chinese, this two-syllable phrase is the standard way to thank someone.",
-            "answer": "What is xièxie (谢谢)"
+            "prompt": "OLAP (Data)",
+            "answer": "Online Analytical Processing"
           },
           {
-            "prompt": "In Thailand, this two-word phrase is followed by a polite particle — \"khrap\" or \"kha\" — depending on the speaker.",
-            "answer": "What is khob khun (ขอบคุณ)"
+            "prompt": "PHP (Web Language)",
+            "answer": "PHP: Hypertext Preprocessor (People Helping People)"
           }
         ]
       },
@@ -364,27 +364,27 @@
         ]
       },
       {
-        "title": "Technology Abbreviations",
+        "title": "Say Thank You!",
         "questions": [
           {
-            "prompt": "WYSIWYG (Web Editor)",
-            "answer": "What You See Is What You Get"
+            "prompt": "In Japan, you'd say this phrase (5 syllables) to express gratitude — often paired with a bow.",
+            "answer": "What is arigatou gozaimasu"
           },
           {
-            "prompt": "GPT (AI)",
-            "answer": "Generative Pre-trained Transformer"
+            "prompt": "In Korea, this formal phrase ending in \"-mnida\" is the polite way to say thanks.",
+            "answer": "What is kamsahamnida (감사합니다)"
           },
           {
-            "prompt": "CNN (Machine Learning)",
-            "answer": "Convolutional Neural Network"
+            "prompt": "In Hindi, this short word meaning \"thank you\" shares its root with the Sanskrit word for praise.",
+            "answer": "What is dhanyavaad (धन्यवाद)"
           },
           {
-            "prompt": "OLAP (Data)",
-            "answer": "Online Analytical Processing"
+            "prompt": "In Mandarin Chinese, this two-syllable phrase is the standard way to thank someone.",
+            "answer": "What is xièxie (谢谢)"
           },
           {
-            "prompt": "PHP (Web Language)",
-            "answer": "PHP: Hypertext Preprocessor (People Helping People)"
+            "prompt": "In Thailand, this two-word phrase is followed by a polite particle — \"khrap\" or \"kha\" — depending on the speaker.",
+            "answer": "What is khob khun (ขอบคุณ)"
           }
         ]
       },
