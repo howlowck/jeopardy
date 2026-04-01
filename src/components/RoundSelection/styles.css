@@ -34,3 +34,7 @@
 .modal .selections .round-select.disabled {
     cursor: initial;
 }
+
+.modal.round-selection .teams .exit {
+    margin-left: auto;
+}

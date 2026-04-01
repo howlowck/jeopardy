@@ -2,6 +2,7 @@ import React from 'react'
 import ReactModal from 'react-modal'
 import { useDispatch } from 'react-redux'
 import { newRound } from '../../redux/epics/newRoundEpic'
+import { close } from '../../redux/slices/roundSelectionModal'
 import { resetScores } from '../../redux/slices/teams'
 import { Round, Team } from '../../types'
 import './styles.css'
@@ -35,6 +36,7 @@ const Component: React.FC<Prop> = ({
           )
         })}
         <button onClick={() => dispatch(resetScores())}>Reset Score</button>
+        <button className="exit" onClick={() => dispatch(close())}>Exit</button>
       </div>
       <h2>Rounds</h2>
       <div className="selections">
