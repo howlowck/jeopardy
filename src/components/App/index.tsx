@@ -36,7 +36,7 @@ function App() {
   const pointsList = rounds[currentRoundIndex]?.pointsList
   const categories = rounds[currentRoundIndex]?.categories
 
-  const maxRoundWager = pointsList[4]
+  const maxRoundWager = pointsList?.[4] ?? 0
 
   const dispatch = useDispatch()
   const ddConfirmedTeam = useSelector<ReduxState, number | null>(
@@ -69,17 +69,24 @@ function App() {
               activeQuestion
                 ? categories[activeQuestion.categoryIndex]?.questions[
                     activeQuestion.questionIndex
-                  ].dailyDouble === true
+                  ]?.dailyDouble === true
                 : false
             }
             points={
-              activeQuestion ? pointsList[activeQuestion.questionIndex] : 0
+              activeQuestion ? pointsList?.[activeQuestion.questionIndex] ?? 0 : 0
             }
             question={
               activeQuestion
                 ? categories[activeQuestion.categoryIndex]?.questions[
                     activeQuestion.questionIndex
-                  ].prompt
+                  ]?.prompt ?? ''
+                : ''
+            }
+            answer={
+              activeQuestion
+                ? categories[activeQuestion.categoryIndex]?.questions[
+                    activeQuestion.questionIndex
+                  ]?.answer ?? ''
                 : ''
             }
           />
