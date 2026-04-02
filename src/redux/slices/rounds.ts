@@ -1,19 +1,20 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Round } from '../../types'
-import roundsData from '../../data/rounds.json'
+import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
+import { parseRoundsFromCsv } from "../../data/parseRounds";
+import roundsCsv from "../../data/rounds.csv?raw";
+import type { Round } from "../../types";
 
-const initialState: Round[] = roundsData as Round[]
+const initialState: Round[] = parseRoundsFromCsv(roundsCsv);
 
 const slice = createSlice({
-  name: 'rounds',
+	name: "rounds",
 
-  initialState: initialState as Round[],
+	initialState: initialState as Round[],
 
-  reducers: {
-    setRounds: (state, action: PayloadAction<{ rounds: Round[] }>) => {},
-  },
-})
+	reducers: {
+		setRounds: (state, action: PayloadAction<{ rounds: Round[] }>) => {},
+	},
+});
 
-export const { setRounds } = slice.actions
+export const { setRounds } = slice.actions;
 
-export default slice.reducer
+export default slice.reducer;
